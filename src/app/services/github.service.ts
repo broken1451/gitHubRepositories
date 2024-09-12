@@ -1236,7 +1236,7 @@ export class GithubService {
 
   public getRepositories(termino: string): Observable<GitHubResponse> {
    
-    const headers =  new HttpHeaders({ "Authorization": "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"});
+    const headers =  new HttpHeaders({ "Authorization": ""});
     return this.http.get<GitHubResponse>(`https://api.github.com/search/repositories?q=${termino}`, {headers}).pipe(
       map((response: any) => response)
     );
